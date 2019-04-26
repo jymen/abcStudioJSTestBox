@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img width="25%" src="./assets/logo.png">
-    <HelloWorld/>
+    <img alt="Vue logo" src="./assets/TopViolin.png">
+    <AbcStudioWelcome
+      title="Abc WebXml studio score panel"
+      message="This Panel will be used to display Abc and WebXml scores"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import { Component, Vue } from "vue-property-decorator";
+import AbcStudioWelcome from "./components/AbcStudioWelcome.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    AbcStudioWelcome
   }
 };
 </script>
